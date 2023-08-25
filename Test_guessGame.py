@@ -55,7 +55,9 @@ class TestAssignment1(unittest.TestCase):
         hints = self.assignment.check_guess([1, 2, 3, 4], ['a', 'b', 'c', 'd'])
         self.assertEqual(hints, ['_','_','_','_'])
 
-       
+
+
+
 
 if __name__ == '__main__':
     unittest.main()        
