@@ -1,7 +1,6 @@
 import unittest
 from guessGame import guessGame
 
-
 class TestAssignment1(unittest.TestCase):
     def setUp(self):
         self.assignment = guessGame()
@@ -36,7 +35,6 @@ class TestAssignment1(unittest.TestCase):
         self.assertEqual(hints, ['x', 'x', 'x', 'x'])
 
 
-    
     def test_check_guess_notEqual(self):
         hints = self.assignment.check_guess([1,2,3,4],[1,2,3,5])
         self.assertNotEqual(hints,['o','o','o','o'])
@@ -54,10 +52,6 @@ class TestAssignment1(unittest.TestCase):
         # Test when guess has non-numeric characters
         hints = self.assignment.check_guess([1, 2, 3, 4], ['a', 'b', 'c', 'd'])
         self.assertEqual(hints, ['_','_','_','_'])
-
-
-
-
 
 if __name__ == '__main__':
     unittest.main()        
